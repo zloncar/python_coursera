@@ -1,0 +1,42 @@
+[user]
+  name = Zeljko Loncar
+  email = zeljko.loncar@onthebeach.co.uk
+[core]
+  autocrlf = input
+  editor = vim
+  whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+  excludesfile = ~/.gitignore
+[push]
+    default = upstream
+[color "status"]
+  added = green
+  changed = yellow
+  untracked = red
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
+[help]
+  autocorrect = 5
+[alias]
+  purr = pull --rebase
+  st = status -sb
+# lg = log --graph --decorate --pretty=format:'%C(auto)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --all
+  lg = log --graph --decorate --oneline
+  ln = log --graph --decorate --oneline --all
+  rh = reset --hard
+[merge]
+  tool = meld
+  ff = no
+[diff]
+  tool = meld
+[http]
+  sslVerify = false
+[github]
+  user = zeljko-loncar
+[credential]
+  # Cache for two days
+  helper = cache --timeout=172800
