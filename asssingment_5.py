@@ -3,6 +3,11 @@ smallest = None
 
 while True:
     num = raw_input("Enter a number: ")
+    try:
+        num = int(num)
+    except:
+        print "Invalid input"
+        # continue
     if num == "done":
         break
     elif num > largest:
@@ -11,11 +16,6 @@ while True:
         smallest = num
     else:
         smallest = num
-    try:
-        num = int(num)
-    except:
-        print "Invalid input"
-        continue
 
 print "Maximum is", largest
 print "Minimum is", smallest
