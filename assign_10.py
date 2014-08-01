@@ -10,10 +10,10 @@ counts = dict()
 
 for line in fh:
   if line.startswith('From '):
-  	line = line.strip()
-  	words = line.split()
-  	hour = words[5].split(':')[0]
-  	counts[hour] = counts.get(hour,0) + 1
+    line = line.strip()
+    words = line.split()
+    hour = words[5].split(':')[0]
+    counts[hour] = counts.get(hour,0) + 1
 
 lst = list()
 
