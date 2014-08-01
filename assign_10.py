@@ -18,9 +18,9 @@ for line in fh:
 lst = list()
 
 for key, value in counts.items():
-	lst.append( (key, value) )
+  lst.append( (key, value) )
 
 lst.sort()
 
 for key, value in lst:
-	print key, value
+  print key, value
