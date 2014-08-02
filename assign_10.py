@@ -15,11 +15,7 @@ for line in fh:
     hour = words[5].split(':')[0]
     counts[hour] = counts.get(hour,0) + 1
 
-lst = list()
-
-for key, value in counts.items():
-  lst.append( (key, value) )
-
+lst = counts.items()
 lst.sort()
 
 for key, value in lst:
